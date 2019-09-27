@@ -1,0 +1,12 @@
+name: .god
+version: ONE
+author: McLel
+main: E.Main
+api-version: 1.13
+commands:
+  god:
+    description: Speak as god (OP Only)
+    usage: /god <message>
+  godbot:
+    description: Configure the Godbot (OP Only)
+    usage: /godbot <...>
