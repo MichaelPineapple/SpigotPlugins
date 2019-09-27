@@ -1,0 +1,9 @@
+name: .bfe
+version: ONE
+author: McLel
+main: mcl1.Main
+api-version: 1.13
+commands:
+  bfe:
+    description: Sends you to bfe (WARNING - ALL ITEMS WILL BE DROPPED)
+    usage: /bfe
