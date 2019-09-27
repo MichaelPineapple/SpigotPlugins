@@ -1,9 +1,0 @@
-name: .cum
-version: ONE
-author: McLel
-main: cumpak.Main
-api-version: 1.13
-commands:
-  cum:
-    description: Try holding a bucket
-    usage: /cum
