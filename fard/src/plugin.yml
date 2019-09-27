@@ -1,0 +1,9 @@
+name: .fard
+version: ONE
+author: McLel
+main: fardrugs.Main
+api-version: 1.13
+commands:
+  givedrug:
+    description: Give player some drugs (must be OP)
+    usage: /givedrug <drug> <player>
