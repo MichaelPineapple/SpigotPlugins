@@ -1,0 +1,5 @@
+name: ChillPhantoms
+version: 0
+author: McLel
+main: chill.Main
+api-version: 1.13
