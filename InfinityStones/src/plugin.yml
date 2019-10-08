@@ -5,5 +5,8 @@ main: mclstones.Main
 api-version: 1.13
 commands:
   thanos:
-    description: Spawn the Infinity Stones (Must be OP)
+    description: Spawn the Infinity Stones (Must have permission)
     usage: /thanos <player>
+permissions:
+  thanos:
+    description: Allows spawn the Infinity Stones
