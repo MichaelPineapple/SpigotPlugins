@@ -228,7 +228,7 @@ public class Main extends JavaPlugin implements Listener
         @Override
         public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
         {
-            if (sender.isOp())
+            if (sender.hasPermission("thanos"))
             {
                 if (args.length >= 1)
                 {
@@ -248,7 +248,7 @@ public class Main extends JavaPlugin implements Listener
 
 
             }
-            else sender.sendMessage("Only operators can use this command");
+            else sender.sendMessage("Only authorized users can use this command");
 
             return true;
         }
