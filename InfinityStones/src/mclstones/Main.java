@@ -98,8 +98,11 @@ public class Main extends JavaPlugin implements Listener
             ItemStack item = p.getInventory().getItemInMainHand();
             if (item.getType() != Material.AIR)
             {
-                if (item.getItemMeta().getLocalizedName().equals(MIND_TAG)) mindLeft(target, p);
-                event.setCancelled(true);
+                if (item.getItemMeta().getLocalizedName().equals(MIND_TAG))
+                {
+                    mindLeft(target, p);
+                    event.setCancelled(true);
+                }
             }
         }
     }
