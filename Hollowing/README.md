@@ -1,0 +1,1 @@
+Max health is diminished on death but replenished by cake

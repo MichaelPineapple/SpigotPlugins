@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Bonk:jar">
+    <output-path>$PROJECT_DIR$/../server/plugins</output-path>
+    <root id="archive" name="Bonk.jar">
+      <element id="module-output" name="Bonk" />
+    </root>
+  </artifact>
+</component>

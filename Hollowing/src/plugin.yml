@@ -1,0 +1,5 @@
+name: Hollowing
+version: 0
+author: InspectorMclel
+main: mcl.hollowing.Main
+api-version: 1.21

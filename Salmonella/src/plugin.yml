@@ -1,0 +1,5 @@
+name: Salmonella
+version: 0
+author: InspectorMclel
+main: mcl.salmonella.Main
+api-version: 1.21

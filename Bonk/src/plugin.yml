@@ -1,0 +1,5 @@
+name: Bonk
+version: 0
+author: InspectorMclel
+main: mcl.bonk.Main
+api-version: 1.21

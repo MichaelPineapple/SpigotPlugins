@@ -1,0 +1,5 @@
+name: HardSlate
+version: 0
+author: InspectorMclel
+main: mcl.hardslate.Main
+api-version: 1.21

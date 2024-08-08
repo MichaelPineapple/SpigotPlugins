@@ -1,0 +1,9 @@
+name: InfinityStones
+version: Infinity
+author: McLel
+main: mclstones.Main
+api-version: 1.13
+commands:
+  thanos:
+    description: Spawn the Infinity Stones (Must be OP)
+    usage: /thanos <player>

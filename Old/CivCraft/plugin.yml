@@ -1,0 +1,69 @@
+name: CivCraft
+version: 0
+author: SirPuffles & InspectorMclel
+main: mcl.Main
+api-version: 1.16
+commands:
+  settle:
+    description: Settle a new city with you as it's mayor.
+    usage: /settle <city_name>
+  claim:
+    description: Claim a chunk for your city.
+    usage: /claim
+  unclaim:
+    description: Relinquish claim of a chunk.
+    usage: /unclaim
+  land:
+    description: Show all land claimed by your city.
+    usage: /land
+  addcitizen:
+    description: Adds a citizen to your city.
+    usage: /addcitizen <player>
+  addofficer:
+    description: Promote a citizen to the rank of officer.
+    usage: /addofficer <player>
+  removeofficer:
+    description: Demote a citizen from the rank of officer.
+    usage: /removeofficer <player>
+  ally:
+    description: Form an alliance with another city.
+    usage: /ally <city>
+  removecitizen:
+    description: Adds a citizen to your city.
+    usage: /addcitizen <player>
+  citylist:
+    description: Displays a list of all cities.
+    usage: /citylist
+  citystats:
+    description: Display stats about City.
+    usage: /citystats
+  cityrename:
+    description: Rename a city
+    usage: /cityrename <newName>
+  allyaccept:
+    description: Accept an alliance request.
+    usage: /allyaccept
+  allydeny:
+    description: Deny an alliance request.
+    usage: /allydeny
+  leavealliance:
+    description: Leave an Alliance with specified city.
+    usage: /leavealliance
+  leavecity:
+    description: Leave city you are currently a citizen of.
+    usage: /leavecity
+  resign:
+    description: Resign as mayor of city and specify sucessor.
+    usage: /resign <player>
+  civadmin_clear:
+    description: Clear all CivCraft data. (OP Only)
+    usage: /civadmin_clear
+  civadmin_delcity:
+    description: Delete a city. (OP Only)
+    usage: /civadmin_delcity <city>
+  civadmin_unloadchunks:
+    description: Unload all chunks (OP Only)
+    usage: /civadmin_unloadchunks
+  civadmin_load:
+    description: Force load city data (OP Only)
+    usage: /civadmin_load
