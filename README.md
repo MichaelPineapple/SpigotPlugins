@@ -1,1 +1,0 @@
-Deepslate can no longer be mined with wooden or stone pickaxes.
