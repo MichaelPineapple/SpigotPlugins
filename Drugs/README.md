@@ -1,4 +1,4 @@
-Adds the drug "Fardamphetamine" and "Gunch" to the server.
+Adds the drugs "Fardamphetamine" and "Gunch" to the server.
 
 https://www.spigotmc.org/resources/fardamphetamine.71606/
 
