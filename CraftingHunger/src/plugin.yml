@@ -1,0 +1,5 @@
+name: CraftingHunger
+version: 0
+author: InspectorMclel
+main: mcl.craftinghunger.Main
+api-version: 1.21

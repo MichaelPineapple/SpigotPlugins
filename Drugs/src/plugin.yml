@@ -1,0 +1,9 @@
+name: Drugs
+version: 0
+author: InspectorMcLel
+main: mcl.drugs.Main
+api-version: 1.21
+commands:
+  givedrug:
+    description: Give player some drugs (Must be OP)
+    usage: /givedrug <drug> <player>

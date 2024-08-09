@@ -1,0 +1,12 @@
+name: MclTpa
+version: 0
+author: InspectorMclel
+main: mcl.tpa.Main
+api-version: 1.21
+commands:
+  tpa:
+    description: Request Teleportation To A Player
+    usage: /tpa <player>
+  tpaccept:
+    description: Accept Teleportation Request
+    usage: /tpaccept

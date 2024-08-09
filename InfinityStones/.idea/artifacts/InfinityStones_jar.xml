@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="InfinityStones:jar">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="InfinityStones.jar">
+      <element id="module-output" name="InfinityStones" />
+    </root>
+  </artifact>
+</component>

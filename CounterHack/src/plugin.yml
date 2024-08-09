@@ -1,0 +1,12 @@
+name: CounterHack
+version: 0
+author: InspectorMcLel
+main: mcl.hax.Main
+api-version: 1.13
+commands:
+  hack:
+    description: ???
+    usage: /hack <player>
+  hackall:
+    description: ???
+    usage: /hackall

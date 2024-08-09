@@ -1,0 +1,9 @@
+name: ToughAsBalls
+version: 0
+author: InspectorMclel
+main: mcl.tough.Main
+api-version: 1.21
+commands:
+  e:
+    description: View Hydration & Body Temperature
+    usage: /e

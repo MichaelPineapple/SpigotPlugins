@@ -1,0 +1,9 @@
+name: TheCumPlugin
+version: 0
+author: InspectorMcLel
+main: mcl.cum.Main
+api-version: 1.21
+commands:
+  cum:
+    description: Try holding a bucket
+    usage: /cum

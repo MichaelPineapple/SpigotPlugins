@@ -1,0 +1,9 @@
+name: Gambling
+version: 0
+author: InspectorMclel
+main: mcl.gambling.Main
+api-version: 1.21
+commands:
+  gamble:
+    description: idk
+    usage: /gamble

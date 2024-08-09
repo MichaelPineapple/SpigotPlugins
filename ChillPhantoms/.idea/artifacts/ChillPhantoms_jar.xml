@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ChillPhantoms:jar">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="ChillPhantoms.jar">
+      <element id="module-output" name="ChillPhantoms" />
+    </root>
+  </artifact>
+</component>

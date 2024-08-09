@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CraftingHunger:jar">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="CraftingHunger.jar">
+      <element id="module-output" name="CraftingHunger" />
+    </root>
+  </artifact>
+</component>

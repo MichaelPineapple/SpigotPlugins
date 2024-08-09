@@ -1,0 +1,9 @@
+name: Sneeze
+version: 0
+author: InspectorMcLel
+main: mcl.sneeze.Main
+api-version: 1.21
+commands:
+  sneeze:
+    description: Do you really need help with this?
+    usage: /sneeze

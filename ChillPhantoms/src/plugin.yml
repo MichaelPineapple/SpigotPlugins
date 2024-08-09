@@ -1,0 +1,5 @@
+name: ChillPhantoms
+version: 0
+author: InspectorMclel
+main: mcl.chillphantoms.Main
+api-version: 1.21

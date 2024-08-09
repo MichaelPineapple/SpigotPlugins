@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MclTpa:jar">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="MclTpa.jar">
+      <element id="module-output" name="MclTpa" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,12 @@
+name: InfinityStones
+version: 0
+author: InspectorMcLel
+main: mcl.stones.Main
+api-version: 1.21
+commands:
+  thanos:
+    description: Spawn the Infinity Stones (Must have permission)
+    usage: /thanos <player>
+permissions:
+  thanos:
+    description: Allows spawn the Infinity Stones
