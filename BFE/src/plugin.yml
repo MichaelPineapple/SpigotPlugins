@@ -1,0 +1,9 @@
+name: BFE
+version: 0
+author: InspectorMcLel
+main: mcl.bfe.Main
+api-version: 1.21
+commands:
+  bfe:
+    description: Teleport to a random location (ALL ITEMS WILL BE DROPPED)
+    usage: /bfe

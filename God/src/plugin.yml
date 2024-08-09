@@ -1,0 +1,66 @@
+name: God
+version: 0
+author: InspectorMcLel
+main: mcl.god.Main
+api-version: 1.21
+commands:
+
+  god:
+    description: Speak as god (OP Only)
+    usage: /god <message>
+
+  godbot rnd:
+    description: Godbot performs a random action.
+    usage: /godbot rnd <player>
+
+  godbot chat:
+    description: Godbot sends a message in the chat.
+    usage: /godbot chat <player>
+
+  godbot color:
+    description: Godbot changes color.
+    usage: /godbot color
+
+  godbot potion:
+    description: Gives everyone a random effect.
+    usage: /godbot potion
+
+  godbot pp:
+    description: Display the size of a player's pp.
+    usage: /godbot pp <player>
+
+  godbot wtf:
+    description: Uhh...
+    usage: /godbot wtf <player>
+
+  godbot music:
+    description: Plays some music.
+    usage: /godbot music
+
+  godbot day:
+    description: Set time to day.
+    usage: /godbot day
+
+  godbot night:
+    description: Set time to night.
+    usage: /godbot night
+
+  godbot boo:
+    description: Scare everyone (Its not very scary.)
+    usage: /godbot boo
+
+  godbot sneeze:
+    description: Forces a player to sneeze.
+    usage: /godbot sneeze <player>
+
+  godbot cum:
+    description: ...
+    usage: /godbot cum
+
+  godbot fard:
+    description: Gives everyone some drugs.
+    usage: /godbot fard
+
+  godbot:
+    description: Act as god. (Must be OP)
+    usage: /godbot <action> <player>
