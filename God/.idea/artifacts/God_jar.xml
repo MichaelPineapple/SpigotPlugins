@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="God:jar">
-    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/God_jar</output-path>
     <root id="archive" name="God.jar">
       <element id="module-output" name="God" />
     </root>

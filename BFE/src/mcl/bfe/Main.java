@@ -40,7 +40,7 @@ public class Main extends JavaPlugin implements Listener
 
         try
         {
-            File configFile = new File("BFEconfig.shid");
+            File configFile = new File("mclcfg/bfe/BFEconfig.shid");
             if (configFile.exists())
             {
                 BufferedReader reader = new BufferedReader(new FileReader(configFile.getCanonicalPath()));
@@ -60,10 +60,7 @@ public class Main extends JavaPlugin implements Listener
         catch (Exception ex) { System.out.println("BFE: error reading/writing config file! Resorting to default values..."); }
 
     }
-
-    @Override
-    public void onDisable() { }
-
+    
     BfePlayer findBfePlayer(UUID id)
     {
         BfePlayer $return = null;

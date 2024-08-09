@@ -11,12 +11,10 @@ public class EnvironmentalEffect
         this.value = _value;
     }
 
-
     public String getName()
     {
         return name;
     }
-
     public int getValue()
     {
         return value;

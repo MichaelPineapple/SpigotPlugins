@@ -31,7 +31,6 @@ public class Main extends JavaPlugin implements Listener
     final int SCORCHING_THRESHOLD = 3;
     final int FREEZING_THRESHOLD = -3;
 
-
     @Override
     public void onEnable()
     {
@@ -50,24 +49,13 @@ public class Main extends JavaPlugin implements Listener
             ballsManager.addNewBalls(p);
         }
 
-        updateTaskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable()
-        {
-            public void run()
-            {
-                onUpdate();
-            }
-
-        }, UPDATE_TICKS, UPDATE_TICKS);
-
+        updateTaskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, this::onUpdate, UPDATE_TICKS, UPDATE_TICKS);
     }
 
     @Override
     public void onDisable()
     {
-        if (updateTaskId != null)
-        {
-            Bukkit.getScheduler().cancelTask(updateTaskId);
-        }
+        if (updateTaskId != null) Bukkit.getScheduler().cancelTask(updateTaskId);
     }
 
     /** EVENT HANDLERS **/
@@ -79,19 +67,12 @@ public class Main extends JavaPlugin implements Listener
         ballsManager.addNewBalls(p);
         ballsManager.getBalls(p).adjustHydration(-50);
 
-
-        updateTaskId = Bukkit.getScheduler().scheduleSyncDelayedTask(this, new Runnable()
+        updateTaskId = Bukkit.getScheduler().scheduleSyncDelayedTask(this, () ->
         {
-            public void run()
-            {
-                p.setHealth(10);
-                p.setFoodLevel(10);
-            }
-
+            p.setHealth(10);
+            p.setFoodLevel(10);
         }, 1);
     }
-
-
 
     @EventHandler
     public void onPlayerJoin(final PlayerJoinEvent event)
@@ -104,11 +85,7 @@ public class Main extends JavaPlugin implements Listener
     public void onFoodChange(FoodLevelChangeEvent e)
     {
         HumanEntity ent = e.getEntity();
-        if (ent instanceof Player)
-        {
-            Player player = (Player)ent;
-            hydroManager.adjustHydration(player, -5.0f, false);
-        }
+        if (ent instanceof Player player) hydroManager.adjustHydration(player, -5.0f, false);
     }
 
     @EventHandler
@@ -130,9 +107,7 @@ public class Main extends JavaPlugin implements Listener
         var onlinePlayers = Bukkit.getOnlinePlayers();
         for (Player p : onlinePlayers)
         {
-
             ArrayList<EnvironmentalEffect> effects = tempManager.calcEnvTemp(p);
-
             PlayerBalls balls = ballsManager.getBalls(p);
             if (balls != null)
             {
@@ -140,18 +115,14 @@ public class Main extends JavaPlugin implements Listener
                 balls.setTemperatureEffects(effects);
                 int curBodyTemp = balls.getBodyTemp();
                 if (curBodyTemp != prevBodyTemp) Util.displayTxt(p, TemperatureManager.FORMAT_TEMP_DISPLAY(curBodyTemp));
-
                 if (curBodyTemp <= FREEZING_THRESHOLD) p.setFreezeTicks(UPDATE_TICKS*4);
-
                 if (curBodyTemp >= SCORCHING_THRESHOLD) p.setFireTicks(UPDATE_TICKS);
-
                 float hydration = balls.getHydration();
                 if (hydration <= 0)
                 {
                     p.damage(1);
                     Util.displayTxt(p, HydrationManager.FORMAT_HYDRATION(hydration));
                 }
-
             }
             else p.sendMessage(Util.NO_BALLS_MSG);
         }
@@ -164,10 +135,8 @@ public class Main extends JavaPlugin implements Listener
         @Override
         public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
         {
-            if (sender instanceof Player)
+            if (sender instanceof Player player)
             {
-                Player player = (Player) sender;
-
                 PlayerBalls balls = ballsManager.getBalls(player);
                 if (balls != null)
                 {
@@ -177,12 +146,10 @@ public class Main extends JavaPlugin implements Listener
                     for (EnvironmentalEffect effect: envEffects) player.sendMessage(effect.getName()+" ("+effect.getValue()+")");
                 }
                 else player.sendMessage(Util.NO_BALLS_MSG);
-
             }
             else System.out.println("This command can only be used by a player.");
 
             return true;
         }
     }
-
 }

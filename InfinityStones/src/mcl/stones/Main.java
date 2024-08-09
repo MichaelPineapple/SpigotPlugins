@@ -53,18 +53,17 @@ public class Main extends JavaPlugin implements Listener
     ItemStack ThanosHelmet = new ItemStack(Material.GOLDEN_HELMET);
 
     BlockData[] spookyBlocks =
-            {
-                    Material.DIAMOND_BLOCK.createBlockData(),
-                    Material.GOLD_BLOCK.createBlockData(),
-                    Material.EMERALD_BLOCK.createBlockData(),
-            };
-
+    {
+        Material.DIAMOND_BLOCK.createBlockData(),
+        Material.GOLD_BLOCK.createBlockData(),
+        Material.EMERALD_BLOCK.createBlockData(),
+    };
 
     EntityType[] minions =
-            {
-                    EntityType.HUSK,
-                    EntityType.STRAY,
-            };
+    {
+        EntityType.HUSK,
+        EntityType.STRAY,
+    };
 
     ItemStack nelsonHelmet = new ItemStack(Material.IRON_HELMET);
     ItemStack henrySword = new ItemStack(Material.IRON_SWORD);

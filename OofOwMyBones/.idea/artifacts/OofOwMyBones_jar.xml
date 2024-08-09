@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="OofOwMyBones:jar">
-    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/OofOwMyBones_jar</output-path>
     <root id="archive" name="OofOwMyBones.jar">
       <element id="module-output" name="OofOwMyBones" />
     </root>

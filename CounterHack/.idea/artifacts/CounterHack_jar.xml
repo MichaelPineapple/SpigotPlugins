@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="CounterHack:jar">
-    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/CounterHack_jar</output-path>
     <root id="archive" name="CounterHack.jar">
       <element id="module-output" name="CounterHack" />
     </root>

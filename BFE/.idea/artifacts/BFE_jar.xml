@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="BFE:jar">
-    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/BFE_jar</output-path>
     <root id="archive" name="BFE.jar">
       <element id="module-output" name="BFE" />
     </root>

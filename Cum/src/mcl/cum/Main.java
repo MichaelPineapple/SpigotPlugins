@@ -30,42 +30,42 @@ public class Main extends JavaPlugin implements Listener
     Random rnd = new Random();
 
     String[] CUM_MSGS =
-            {
-                    "%s just came",
-                    "%s nutted",
-                    "%s cummed",
-                    "%s ejaculated",
-                    "%s reached orgasm",
-                    "%s did /cum",
-                    "haha %s did the cum thing again",
-                    "lol %s just did a cum",
-                    "%s NUT",
-                    "%s made some skeet skeet",
-            };
+    {
+        "%s just came",
+        "%s nutted",
+        "%s cummed",
+        "%s ejaculated",
+        "%s reached orgasm",
+        "%s did /cum",
+        "haha %s did the cum thing again",
+        "lol %s just did a cum",
+        "%s NUT",
+        "%s made some skeet skeet",
+    };
 
     String[] BUCKET_MSGS =
-            {
-                    "%s just came into a bucket",
-                    "%s nutted in a bucket",
-                    "%s cummed in a bucket",
-                    "%s ejaculated into a bucket",
-                    "%s stored their semen in a bucket",
-                    "%s did /cum while holding a bucket",
-                    "haha %s did the cum thing again",
-                    "%s is keeping the cum for later",
-                    "%s BUCKET NUT",
-                    "%s made some skeet skeet in a bucket",
-            };
+    {
+        "%s just came into a bucket",
+        "%s nutted in a bucket",
+        "%s cummed in a bucket",
+        "%s ejaculated into a bucket",
+        "%s stored their semen in a bucket",
+        "%s did /cum while holding a bucket",
+        "haha %s did the cum thing again",
+        "%s is keeping the cum for later",
+        "%s BUCKET NUT",
+        "%s made some skeet skeet in a bucket",
+    };
 
     String[] GOD_MSGS =
-            {
-                    "I just came",
-                    "aahhhhh...",
-                    "...",
-                    "JUICY BIG NUT",
-                    "*cums*",
-                    "*nuts*",
-            };
+    {
+        "I just came",
+        "aahhhhh...",
+        "...",
+        "JUICY BIG NUT",
+        "*cums*",
+        "*nuts*",
+    };
 
     @Override
     public void onEnable()

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Sneeze:jar">
-    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/Sneeze_jar</output-path>
     <root id="archive" name="Sneeze.jar">
       <element id="module-output" name="Sneeze" />
     </root>

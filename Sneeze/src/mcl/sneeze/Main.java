@@ -22,16 +22,12 @@ public class Main extends JavaPlugin implements Listener
         if (cmd != null) cmd.setExecutor(new SneezeCommand());
     }
 
-    @Override
-    public void onDisable() { }
-
     void sneeze(Player _p)
     {
         World theworld = _p.getWorld();
         theworld.spawnParticle(Particle.SNEEZE, _p.getEyeLocation(), 10, 0.1, 0, 0.1, 0.1, null, true);
         theworld.playSound(_p.getEyeLocation(), Sound.ENTITY_PANDA_SNEEZE, 10.0f, 0.01f);
     }
-
 
     class SneezeCommand implements CommandExecutor
     {
