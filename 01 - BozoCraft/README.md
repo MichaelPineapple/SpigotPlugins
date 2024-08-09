@@ -1,1 +1,1 @@
-# BozoCraft (2021)
+# Bozocraft (2021)

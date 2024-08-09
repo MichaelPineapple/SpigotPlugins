@@ -1,1 +1,0 @@
-# GoofyAahPlugins (2022)
