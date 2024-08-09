@@ -1,1 +1,1 @@
-Deepslate can no longer be mined with wooden or stone pickaxes.
+https://www.spigotmc.org/resources/hardslate.118759/
