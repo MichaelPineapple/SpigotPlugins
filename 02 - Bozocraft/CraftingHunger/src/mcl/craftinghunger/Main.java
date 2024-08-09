@@ -1,15 +1,24 @@
 package mcl.craftinghunger;
 
 import org.bukkit.Sound;
+import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.CraftItemEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-
 public class Main extends JavaPlugin implements Listener
 {
+    final Sound[] CRAFTING_SOUNDS =
+    {
+        Sound.BLOCK_WOOD_STEP,
+        Sound.BLOCK_WOOD_FALL,
+        Sound.BLOCK_WOOD_HIT,
+        Sound.BLOCK_WOOD_PLACE,
+        Sound.BLOCK_WOOD_BREAK,
+    };
+
     @Override
     public void onEnable()
     {
@@ -20,23 +29,16 @@ public class Main extends JavaPlugin implements Listener
     public void onCraft(CraftItemEvent event)
     {
         Player p = (Player) event.getWhoClicked();
+        int food = p.getFoodLevel() - 2;
+        if (food < 0) food = 0;
+        playSounds(p, CRAFTING_SOUNDS);
+        p.setFoodLevel(food);
+    }
 
-        int foodLevel = p.getFoodLevel();
-        if (foodLevel < 1)
-        {
-            event.setCancelled(true);
-            p.sendMessage("TOO HUNGRY TO CRAFT");
-            p.playSound(p.getLocation(), Sound.BLOCK_REDSTONE_TORCH_BURNOUT, 1.0f, 1.0f);
-        }
-        else
-        {
-            p.playSound(p.getLocation(), Sound.BLOCK_WOOD_STEP, 1.0f, 1.0f);
-            p.playSound(p.getLocation(), Sound.BLOCK_WOOD_FALL, 1.0f, 1.0f);
-            p.playSound(p.getLocation(), Sound.BLOCK_WOOD_HIT, 1.0f, 1.0f);
-            p.playSound(p.getLocation(), Sound.BLOCK_WOOD_PLACE, 1.0f, 1.0f);
-            p.playSound(p.getLocation(), Sound.BLOCK_WOOD_BREAK, 1.0f, 1.0f);
-            p.setFoodLevel(foodLevel-2);
-        }
+    private void playSounds(Player p, Sound[] sounds)
+    {
+        World w = p.getWorld();
+        for (Sound s: sounds) w.playSound(p, s, 0.5f, 1.0f);
     }
 }
 
