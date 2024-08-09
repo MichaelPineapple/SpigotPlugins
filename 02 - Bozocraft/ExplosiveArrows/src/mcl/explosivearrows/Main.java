@@ -38,7 +38,7 @@ public class Main extends JavaPlugin implements Listener
 
         ShapelessRecipe explosiveArrowRecipe = new ShapelessRecipe(new NamespacedKey(this, EXPLOSIVE_ARROW_ID), explosiveArrow);
         explosiveArrowRecipe.addIngredient(Material.ARROW);
-        explosiveArrowRecipe.addIngredient(Material.GUNPOWDER);
+        explosiveArrowRecipe.addIngredient(Material.TNT);
         Bukkit.addRecipe(explosiveArrowRecipe);
     }
 
