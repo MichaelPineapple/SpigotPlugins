@@ -2,4 +2,5 @@
 
 
 Prevents phantoms from attacking players.
+
 https://www.spigotmc.org/resources/chillphantoms.71602/
