@@ -1,0 +1,5 @@
+name: NoInventory
+version: 0
+author: InspectorMclel
+main: mcl.noinv.Main
+api-version: 1.21
