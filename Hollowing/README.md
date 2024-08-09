@@ -1,1 +1,1 @@
-Max health is diminished on death but replenished by cake
+https://www.spigotmc.org/resources/hollowing.118758/
