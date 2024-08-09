@@ -1,8 +1,6 @@
 # Spigot 1.21 Plugins
 
-A collection of plugins for use in Spigot 1.21 Minecraft servers. 
-
-And just for fun, the plugins are organized into "Albums".
+A collection of plugins for use in Spigot 1.21 Minecraft servers. And just for fun, the plugins are organized into "Albums".
 
 Builds are availiable on my SpigotMC account: https://www.spigotmc.org/members/inspectormclel.685004/
 
