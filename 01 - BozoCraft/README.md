@@ -1,1 +1,1 @@
-# ALBUM 01 - BozoCraft (2021)
+# BozoCraft (2021)
