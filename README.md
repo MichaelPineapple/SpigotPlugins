@@ -1,4 +1,4 @@
-# SpigotPlugins
+# Spigot Plugins
 
 A collection of plugins for use in Spigot 1.21 Minecraft servers.
 
