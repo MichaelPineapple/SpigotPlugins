@@ -1,0 +1,5 @@
+name: ExplosiveArrows
+version: 0
+author: InspectorMclel
+main: mcl.explosivearrows.Main
+api-version: 1.21
