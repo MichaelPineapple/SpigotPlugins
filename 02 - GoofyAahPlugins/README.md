@@ -1,1 +1,1 @@
-# ALBUM 02 - GoofyAahPlugins (2022)
+# GoofyAahPlugins (2022)
